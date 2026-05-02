@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { usePatientStore } from "../store/usePatientStore";
 import { Input } from "./ui/input";
 import { Button } from "./ui/button";
+import { EmptyState } from "./ui/EmptyState";
 
 type TSortConfig = { key: "name" | "admissionDate"; direction: "asc" | "desc" };
 
@@ -126,7 +127,14 @@ export function PatientList() {
             ) : (
               <tr>
                 <td colSpan={5} className="p-10 text-center text-gray-500">
-                  Tidak ada data pasien yang ditemukan.
+                  <EmptyState
+                    title="Belum Ada Data Pasien"
+                    description={
+                      search
+                        ? `Tidak ada pasien yang cocok dengan pencarian "${search}".`
+                        : "Daftar pasien masuk masih kosong. Silakan tambahkan pasien baru melalui tombol di kanan atas."
+                    }
+                  />
                 </td>
               </tr>
             )}
