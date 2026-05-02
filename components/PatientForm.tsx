@@ -46,7 +46,8 @@ export function PatientForm({ onSuccess }: TPatientFormProps) {
     if (!formData.diagnosis) newErrors.diagnosis = "Diagnosa wajib diisi";
     if (!formData.admissionDate)
       newErrors.admissionDate = "Tanggal masuk wajib diisi";
-    if (!formData.doctor) newErrors.doctor = "Dokter DPJP wajib diisi";
+    if (!formData.doctor)
+      newErrors.doctor = "Dokter Penanggung Jawab wajib diisi";
     if (!formData.room) newErrors.room = "Ruangan wajib diisi";
 
     setErrors(newErrors);
