@@ -1,6 +1,8 @@
 # Hospital Information System - Inpatient Module
 
-HThis is a Hospital Information System for Interview Test Data Integrasi Inovasi
+[![Live Demo](https://img.shields.io/badge/Live_Demo-View_Site-blue?style=for-the-badge&logo=vercel)](https://hospital-form-eight.vercel.app/)
+
+This is a Hospital Information System for Interview Test Data Integrasi Inovasi
 
 ## Key Features
 
